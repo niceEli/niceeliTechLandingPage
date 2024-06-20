@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Eli Cardosos Portfolio">
+  <a class="hidden" rel="me" href="https://mastodon.gamedev.place/@niceEli"
+    >Mastodon</a
+  >
+  <div class="h-screen w-full flex justify-center items-center">
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <div class="card-body">
+        <figure>
+          <img src="./favicon.png" alt="Eli Cardoso Profile Icon" />
+        </figure>
+        <h2 class="card-title">Eli Cardoso</h2>
+        <p>Hello I Am Eli Cardoso, I like to code, do art, and make games!</p>
+        <div class="card-actions justify-end">
+          <button
+            onclick="window.location.href=`https://blog.niceEli.tech/`"
+            class="btn btn-primary">Blog</button
+          >
+          <button
+            onclick="window.location.href=`https://mastodon.gamedev.place/@niceEli`"
+            class="btn btn-accent">Mastodon</button
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
