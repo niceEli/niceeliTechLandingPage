@@ -1,12 +1,19 @@
 ---
+export interface Props {
+  title: string;
+  icon: string;
+  description: string;
+}
+
 import "../global.css"
-const {title, icon} = Astro.props;
+const {title, icon, description} = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href={icon} />
   </head>
