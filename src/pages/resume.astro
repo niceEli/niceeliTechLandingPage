@@ -1,5 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import eliImage from "^/me.png";
 ---
 
 <Layout title="Resume" icon="/favicon.png" description="Eli Cardoso's Resume">
@@ -7,6 +9,11 @@ import Layout from "@/layouts/Layout.astro";
     <div class="container mx-auto">
       <div class="text-center mb-8">
         <h1 class="text-4xl font-bold">Eli Cardoso</h1>
+        <Image
+          src={eliImage}
+          alt="Eli Cardoso looking at the camera"
+          class={"inline-block align-middle object-cover w-52 h-52"}
+        />
         <p class="text-lg">Software Developer</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -16,13 +23,13 @@ import Layout from "@/layouts/Layout.astro";
             <li>
               <h3 class="text-xl font-bold">Free Geek Newmarket</h3>
               <p class="text-sm">
-                Software Engineer (2023 - 2023, 50 hour volenteer)
+                Computer Specialist (2023 - 2023, 50 hour volenteer)
               </p>
               <p>Worked on computers to fix them and install linux on them.</p>
             </li>
             <li>
               <h3 class="text-xl font-bold">KAPLAY OSS</h3>
-              <p class="text-sm">Junior Developer (2024 - Present)</p>
+              <p class="text-sm">Software Maintainer (2024 - Present)</p>
               <p>
                 Developed and maintained the KAPLAY JavaScript library as a
                 maintainer of its open-source community.
