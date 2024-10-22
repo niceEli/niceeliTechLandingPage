@@ -1,0 +1,53 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Resume" icon="/favicon.png" description="Eli Cardoso's Resume">
+  <section class="p-6 bg-base-200">
+    <div class="container mx-auto">
+      <div class="text-center mb-8">
+        <h1 class="text-4xl font-bold">Eli Cardoso</h1>
+        <p class="text-lg">Software Developer</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+          <ul class="list-disc list-inside">
+            <li>
+              <h3 class="text-xl font-bold">Free Geek Newmarket</h3>
+              <p class="text-sm">
+                Software Engineer (2023 - 2023, 50 hour volenteer)
+              </p>
+              <p>Worked on computers to fix them and install linux on them.</p>
+            </li>
+            <li>
+              <h3 class="text-xl font-bold">KAPLAY OSS</h3>
+              <p class="text-sm">Junior Developer (2024 - Present)</p>
+              <p>
+                Developed and maintained the KAPLAY JavaScript library as a
+                maintainer of its open-source community.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Education</h2>
+          <ul class="list-disc list-inside">
+            <li>
+              <h3 class="text-xl font-bold">High School</h3>
+              <p class="text-sm">Computer Science (2023 - Present)</p>
+            </li>
+          </ul>
+          <h2 class="text-2xl font-semibold mt-8 mb-4">Skills</h2>
+          <ul class="list-disc list-inside">
+            <li>JavaScript, React, Node.js</li>
+            <li>HTML, CSS, Tailwind CSS</li>
+            <li>Git, Docker, CI/CD</li>
+            <li>KAPLAY, C#, Java</li>
+            <li>Linux, MacOS, Redot/Godot</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
